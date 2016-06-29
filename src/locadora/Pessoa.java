@@ -5,30 +5,25 @@
  */
 package locadora;
 
+import java.util.Date;
+
 /**
  *
  * @author brunosette
  */
 public class Pessoa {
     
-    protected String nome;
-    protected String telefone;
-    protected String celular;
-    protected String Endereco;
-    protected String Bairro;
-    protected String CEP;
-    protected String Cidade;
-    protected String Estado;
-    protected String email;
+    private String nome;
+    private String telefone;
+    private String celular;
+    private Endereco endereco;
+    private String email;
+    private String rg;
+    private String cpf;
+    private Date dataNascimento;
+    private String nacionalidade;
 
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
+    
     public String getNome() {
         return nome;
     }
@@ -53,43 +48,55 @@ public class Pessoa {
         this.celular = celular;
     }
 
-    public String getEndereco() {
-        return Endereco;
+
+    public String getEmail() {
+        return email;
     }
 
-    public void setEndereco(String Endereco) {
-        this.Endereco = Endereco;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
-    public String getBairro() {
-        return Bairro;
+    public String getRg() {
+        return rg;
     }
 
-    public void setBairro(String Bairro) {
-        this.Bairro = Bairro;
+    public void setRg(String rg) {
+        this.rg = rg;
     }
 
-    public String getCEP() {
-        return CEP;
+    public String getCpf() {
+        return cpf;
     }
 
-    public void setCEP(String CEP) {
-        this.CEP = CEP;
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
     }
 
-    public String getCidade() {
-        return Cidade;
+    public Date getDataNascimento() {
+        return dataNascimento;
     }
 
-    public void setCidade(String Cidade) {
-        this.Cidade = Cidade;
+    public void setDataNascimento(Date dataNascimento) {
+        this.dataNascimento = dataNascimento;
     }
 
-    public String getEstado() {
-        return Estado;
+    public String getNacionalidade() {
+        return nacionalidade;
     }
 
-    public void setEstado(String Estado) {
-        this.Estado = Estado;
+    public void setNacionalidade(String nacionalidade) {
+        this.nacionalidade = nacionalidade;
     }
+
+    public Endereco getEndereco() {
+        return endereco;
+    }
+
+    public void setEndereco(Endereco endereco) {
+        this.endereco = endereco;
+    }
+
+    
+    
 }

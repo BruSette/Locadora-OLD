@@ -11,13 +11,23 @@ import java.util.Date;
  *
  * @author brunosette
  */
-public class Funcionario extends PessoaFisica{
-    Date dataAdmiss;
-    Date dataDemiss;
-    String cargo;
-    String usuario;
-    String senha;
-    ContaBancaria conta;
+public class Funcionario {
+    private Date dataAdmiss;
+    private Date dataDemiss;
+    private String cargo;
+    private String usuario;
+    private String senha;
+    private ContaBancaria conta;
+    private String rg;
+    private String cpf;
+    private Date dataNascimento;
+    private String nacionalidade;
+    private String nome;
+    private String telefone;
+    private String celular;
+    private Endereco Endereco;
+    
+    private String email;
 
     public Date getDataAdmiss() {
         return dataAdmiss;
@@ -66,6 +76,80 @@ public class Funcionario extends PessoaFisica{
     public void setConta(ContaBancaria conta) {
         this.conta = conta;
     }
+
+    public String getRg() {
+        return rg;
+    }
+
+    public void setRg(String rg) {
+        this.rg = rg;
+    }
+
+    public String getCpf() {
+        return cpf;
+    }
+
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
+    }
+
+    public Date getDataNascimento() {
+        return dataNascimento;
+    }
+
+    public void setDataNascimento(Date dataNascimento) {
+        this.dataNascimento = dataNascimento;
+    }
+
+    public String getNacionalidade() {
+        return nacionalidade;
+    }
+
+    public void setNacionalidade(String nacionalidade) {
+        this.nacionalidade = nacionalidade;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getTelefone() {
+        return telefone;
+    }
+
+    public void setTelefone(String telefone) {
+        this.telefone = telefone;
+    }
+
+    public String getCelular() {
+        return celular;
+    }
+
+    public void setCelular(String celular) {
+        this.celular = celular;
+    }
+
+    public Endereco getEndereco() {
+        return Endereco;
+    }
+
+    public void setEndereco(Endereco Endereco) {
+        this.Endereco = Endereco;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+    
+    
     
     
 }

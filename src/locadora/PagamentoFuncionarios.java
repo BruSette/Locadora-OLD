@@ -9,10 +9,25 @@ package locadora;
  *
  * @author brunosette
  */
-public class PagamentoFuncionarios extends Pagamento {
+public class PagamentoFuncionarios  {
     private Funcionario funcionarios[];
-    
-    public void pagar (Funcionario funcionarios[]){
-        
+    private ContaBancaria conta;
+
+    public Funcionario[] getFuncionarios() {
+        return funcionarios;
     }
+
+    public void setFuncionarios(Funcionario[] funcionarios) {
+        this.funcionarios = funcionarios;
+    }
+
+    public ContaBancaria getConta() {
+        return conta;
+    }
+
+    public void setConta(ContaBancaria conta) {
+        this.conta = conta;
+    }
+    
+    
 }

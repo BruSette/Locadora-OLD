@@ -11,12 +11,19 @@ import java.util.Date;
  *
  * @author brunosette
  */
-public class PessoaFisica extends Pessoa {
-    
-    protected String rg;
-    protected String cpf;
-    protected Date dataNascimento;
-    protected String nacionalidade;
+public class PessoaFisica {
+
+    private String rg;
+    private String cpf;
+    private Date dataNascimento;
+    private String nacionalidade;
+
+    private String nome;
+    private String telefone;
+    private String celular;
+    private Endereco endereco;
+    private String Estado;
+    private String email;
 
     public String getRg() {
         return rg;
@@ -49,6 +56,53 @@ public class PessoaFisica extends Pessoa {
     public void setNacionalidade(String nacionalidade) {
         this.nacionalidade = nacionalidade;
     }
-    
-    
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getTelefone() {
+        return telefone;
+    }
+
+    public void setTelefone(String telefone) {
+        this.telefone = telefone;
+    }
+
+    public String getCelular() {
+        return celular;
+    }
+
+    public void setCelular(String celular) {
+        this.celular = celular;
+    }
+
+    public String getEstado() {
+        return Estado;
+    }
+
+    public void setEstado(String Estado) {
+        this.Estado = Estado;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public Endereco getEndereco() {
+        return endereco;
+    }
+
+    public void setEndereco(Endereco endereco) {
+        this.endereco = endereco;
+    }
+
 }

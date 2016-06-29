@@ -10,6 +10,6 @@ package locadora;
  * @author brunosette
  */
 public class Pagamento {
-    ContaBancaria conta;
+    private ContaBancaria conta;
     
 }
