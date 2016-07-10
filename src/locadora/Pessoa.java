@@ -5,98 +5,68 @@
  */
 package locadora;
 
-import java.util.Date;
-
 /**
  *
  * @author brunosette
  */
 public class Pessoa {
-    
-    private String nome;
-    private String telefone;
-    private String celular;
-    private Endereco endereco;
-    private String email;
-    private String rg;
-    private String cpf;
-    private Date dataNascimento;
-    private String nacionalidade;
 
-    
-    public String getNome() {
-        return nome;
-    }
+	private String nome;
+	private String telefone;
+	private String celular;
+	private Endereco endereco;
+	private String email;
 
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
+	
+	public Pessoa() {
+		
+	}
 
-    public String getTelefone() {
-        return telefone;
-    }
+	public String getEmail() {
+		return email;
+	}
 
-    public void setTelefone(String telefone) {
-        this.telefone = telefone;
-    }
+	public void setEmail(String email) {
+		this.email = email;
+	}
 
-    public String getCelular() {
-        return celular;
-    }
+	public String getNome() {
+		return nome;
+	}
 
-    public void setCelular(String celular) {
-        this.celular = celular;
-    }
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
 
+	public String getTelefone() {
+		return telefone;
+	}
 
-    public String getEmail() {
-        return email;
-    }
+	public void setTelefone(String telefone) {
+		this.telefone = telefone;
+	}
 
-    public void setEmail(String email) {
-        this.email = email;
-    }
+	public String getCelular() {
+		return celular;
+	}
 
-    public String getRg() {
-        return rg;
-    }
+	public void setCelular(String celular) {
+		this.celular = celular;
+	}
 
-    public void setRg(String rg) {
-        this.rg = rg;
-    }
+	public Endereco getEndereco() {
+		return endereco;
+	}
 
-    public String getCpf() {
-        return cpf;
-    }
+	public void setEndereco(Endereco endereco) {
+		this.endereco = endereco;
+	}
 
-    public void setCpf(String cpf) {
-        this.cpf = cpf;
-    }
+	@Override
+	public String toString() {
+		return "Pessoa []";
+	}
+	
+	
 
-    public Date getDataNascimento() {
-        return dataNascimento;
-    }
-
-    public void setDataNascimento(Date dataNascimento) {
-        this.dataNascimento = dataNascimento;
-    }
-
-    public String getNacionalidade() {
-        return nacionalidade;
-    }
-
-    public void setNacionalidade(String nacionalidade) {
-        this.nacionalidade = nacionalidade;
-    }
-
-    public Endereco getEndereco() {
-        return endereco;
-    }
-
-    public void setEndereco(Endereco endereco) {
-        this.endereco = endereco;
-    }
-
-    
-    
 }

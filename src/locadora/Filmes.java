@@ -17,7 +17,14 @@ public class Filmes {
     private String genero;
     private Boolean disponibilidade;
 
-    public String getNomeFilme() {
+    
+    
+    
+    public Filmes() {
+		super();
+	}
+
+	public String getNomeFilme() {
         return nomeFilme;
     }
 
@@ -48,6 +55,11 @@ public class Filmes {
     public void setDisponibilidade(Boolean disponibilidade) {
         this.disponibilidade = disponibilidade;
     }
+
+	@Override
+	public String toString() {
+		return "Filmes []";
+	}
     
     
     

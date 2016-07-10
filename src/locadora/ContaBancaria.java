@@ -10,9 +10,21 @@ package locadora;
  * @author brunosette
  */
 public class ContaBancaria {
+
     private String banco;
     private String agencia;
     private String contaNumero;
+
+    public ContaBancaria(String banco, String agencia) {
+        super();
+        this.banco = banco;
+        this.agencia = agencia;
+    }
+
+    public ContaBancaria(String agencia) {
+        super();
+        this.agencia = agencia;
+    }
 
     public String getBanco() {
         return banco;
@@ -37,6 +49,10 @@ public class ContaBancaria {
     public void setContaNumero(String contaNumero) {
         this.contaNumero = contaNumero;
     }
-    
-    
+
+    @Override
+    public String toString() {
+        return "ContaBancaria []";
+    }
+
 }

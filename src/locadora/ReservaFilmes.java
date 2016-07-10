@@ -12,9 +12,53 @@ import java.util.Date;
  * @author brunosette
  */
 public class ReservaFilmes {
-    Cliente cliente;
-    Funcionario funcionario;
-    Filmes filmes[];
-    Date dataReserva;
-    Date dataDevolucao;
+	
+	
+    private Cliente cliente;
+    private Funcionario funcionario;
+    private Filmes filmes[];
+    private Date dataReserva;
+    private Date dataDevolucao;
+    
+    
+	public ReservaFilmes() {
+		super();
+	}
+	public Cliente getCliente() {
+		return cliente;
+	}
+	public void setCliente(Cliente cliente) {
+		this.cliente = cliente;
+	}
+	public Funcionario getFuncionario() {
+		return funcionario;
+	}
+	public void setFuncionario(Funcionario funcionario) {
+		this.funcionario = funcionario;
+	}
+	public Filmes[] getFilmes() {
+		return filmes;
+	}
+	public void setFilmes(Filmes[] filmes) {
+		this.filmes = filmes;
+	}
+	public Date getDataReserva() {
+		return dataReserva;
+	}
+	public void setDataReserva(Date dataReserva) {
+		this.dataReserva = dataReserva;
+	}
+	public Date getDataDevolucao() {
+		return dataDevolucao;
+	}
+	public void setDataDevolucao(Date dataDevolucao) {
+		this.dataDevolucao = dataDevolucao;
+	}
+	
+	@Override
+	public String toString() {
+		return "ReservaFilmes []";
+	}
+    
+	
 }

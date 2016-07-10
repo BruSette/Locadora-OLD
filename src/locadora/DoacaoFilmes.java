@@ -16,8 +16,13 @@ public class DoacaoFilmes {
     private PessoaJuridica entidade;
     private EstoqueFilmes estoque;
     private Date dataDoacao;
+    private Funcionario responsavel;
+    
+    public DoacaoFilmes(Funcionario responsavel) {
+		this.responsavel = responsavel;
+	}
 
-    public Filmes[] getFilmes() {
+	public Filmes[] getFilmes() {
         return filmes;
     }
 
@@ -48,6 +53,19 @@ public class DoacaoFilmes {
     public void setDataDoacao(Date dataDoacao) {
         this.dataDoacao = dataDoacao;
     }
+
+	public Funcionario getResponsavel() {
+		return responsavel;
+	}
+
+	public void setResponsavel(Funcionario responsavel) {
+		this.responsavel = responsavel;
+	}
+
+	@Override
+	public String toString() {
+		return "DoacaoFilmes []";
+	}
     
     
 }

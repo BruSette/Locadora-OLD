@@ -29,6 +29,19 @@ public class OperacaoEstoqueFilmes {
     public void setValorCompra(Double valorCompra) {
         this.valorCompra = valorCompra;
     }
+
+	public Pagamento getPagamento() {
+		return pagamento;
+	}
+
+	public void setPagamento(Pagamento pagamento) {
+		this.pagamento = pagamento;
+	}
+
+	@Override
+	public String toString() {
+		return "OperacaoEstoqueFilmes []";
+	}
     
     
             

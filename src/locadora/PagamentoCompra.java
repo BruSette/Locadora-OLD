@@ -9,15 +9,27 @@ package locadora;
  *
  * @author brunosette
  */
-public class PagamentoCompra  {
-    private ContaBancaria conta;
-
-    public ContaBancaria getConta() {
-        return conta;
-    }
-
-    public void setConta(ContaBancaria conta) {
-        this.conta = conta;
-    }
+public class PagamentoCompra extends Pagamento {
     
+	private OperacaoEstoqueFilmes compra;
+		
+    public OperacaoEstoqueFilmes getCompra() {
+		return compra;
+	}
+
+	public void setCompra(OperacaoEstoqueFilmes compra) {
+		this.compra = compra;
+	}
+
+	public void pagar(OperacaoEstoqueFilmes compra){
+        
+    }
+
+	@Override
+	public String toString() {
+		return "PagamentoCompra []";
+	}
+	
+	
+	
 }

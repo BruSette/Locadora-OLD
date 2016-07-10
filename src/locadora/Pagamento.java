@@ -10,6 +10,26 @@ package locadora;
  * @author brunosette
  */
 public class Pagamento {
+	
     private ContaBancaria conta;
+
+	
+
+	public ContaBancaria getConta() {
+		return conta;
+	}
+
+	public void setConta(ContaBancaria conta) {
+		this.conta = conta;
+	}
+
+	@Override
+	public String toString() {
+		return "Pagamento []";
+	}
+    
+    
+	
+    //Definir a chamada das classes de pagamento compra ou pagamento de funcionarios
     
 }
