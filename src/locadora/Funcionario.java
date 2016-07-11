@@ -15,9 +15,16 @@ public class Funcionario extends PessoaFisica{
     private Date dataAdmiss;
     private Date dataDemiss;
     private String cargo;
-    private String usuario;
-    private String senha;
+    private Usuario usuario;
     private ContaBancaria conta;
+
+    public Usuario getUsuario() {
+        return usuario;
+    }
+
+    public void setUsuario(Usuario usuario) {
+        this.usuario = usuario;
+    }
 
     public Date getDataAdmiss() {
         return dataAdmiss;
@@ -43,21 +50,7 @@ public class Funcionario extends PessoaFisica{
         this.cargo = cargo;
     }
 
-    public String getUsuario() {
-        return usuario;
-    }
-
-    public void setUsuario(String usuario) {
-        this.usuario = usuario;
-    }
-
-    public String getSenha() {
-        return senha;
-    }
-
-    public void setSenha(String senha) {
-        this.senha = senha;
-    }
+    
 
     public ContaBancaria getConta() {
         return conta;

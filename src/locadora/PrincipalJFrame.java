@@ -29,14 +29,20 @@ public class PrincipalJFrame extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jMenu1 = new javax.swing.JMenu();
         principaljPanel = new javax.swing.JPanel();
         jMenuBar1 = new javax.swing.JMenuBar();
-        ClientejMenu = new javax.swing.JMenu();
+        clientejMenu = new javax.swing.JMenu();
         clientejMenuItem = new javax.swing.JMenuItem();
+        funcionariojMenu = new javax.swing.JMenu();
+        funcionariojMenuItem = new javax.swing.JMenuItem();
+
+        jMenu1.setText("jMenu1");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setExtendedState(6);
 
-        ClientejMenu.setText("Cliente");
+        clientejMenu.setText("Cliente");
 
         clientejMenuItem.setText("Cliente");
         clientejMenuItem.addActionListener(new java.awt.event.ActionListener() {
@@ -44,9 +50,21 @@ public class PrincipalJFrame extends javax.swing.JFrame {
                 clientejMenuItemActionPerformed(evt);
             }
         });
-        ClientejMenu.add(clientejMenuItem);
+        clientejMenu.add(clientejMenuItem);
 
-        jMenuBar1.add(ClientejMenu);
+        jMenuBar1.add(clientejMenu);
+
+        funcionariojMenu.setText("Funcionario");
+
+        funcionariojMenuItem.setText("Funcionario");
+        funcionariojMenuItem.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                funcionariojMenuItemActionPerformed(evt);
+            }
+        });
+        funcionariojMenu.add(funcionariojMenuItem);
+
+        jMenuBar1.add(funcionariojMenu);
 
         setJMenuBar(jMenuBar1);
 
@@ -54,17 +72,14 @@ public class PrincipalJFrame extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(92, 92, 92)
-                .addComponent(principaljPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(400, Short.MAX_VALUE))
+            .addComponent(principaljPanel, javax.swing.GroupLayout.DEFAULT_SIZE, 433, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(37, 37, 37)
-                .addComponent(principaljPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(272, Short.MAX_VALUE))
+                .addContainerGap()
+                .addComponent(principaljPanel, javax.swing.GroupLayout.DEFAULT_SIZE, 305, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         pack();
@@ -77,6 +92,12 @@ public class PrincipalJFrame extends javax.swing.JFrame {
         
     }//GEN-LAST:event_clientejMenuItemActionPerformed
 
+    private void funcionariojMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_funcionariojMenuItemActionPerformed
+        // TODO add your handling code here:
+        setConteudo(new FuncionarioJPanel());
+    }//GEN-LAST:event_funcionariojMenuItemActionPerformed
+
+    
     private void setConteudo(JPanel tela){
         principaljPanel.removeAll();
         principaljPanel.add(tela);
@@ -92,7 +113,7 @@ public class PrincipalJFrame extends javax.swing.JFrame {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
@@ -121,8 +142,11 @@ public class PrincipalJFrame extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JMenu ClientejMenu;
+    private javax.swing.JMenu clientejMenu;
     private javax.swing.JMenuItem clientejMenuItem;
+    private javax.swing.JMenu funcionariojMenu;
+    private javax.swing.JMenuItem funcionariojMenuItem;
+    private javax.swing.JMenu jMenu1;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JPanel principaljPanel;
     // End of variables declaration//GEN-END:variables
