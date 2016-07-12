@@ -14,8 +14,8 @@ public class Cliente extends PessoaFisica{
     private int limiteFilmes;
 
     public Cliente() {
-		
-	}
+
+	  }
 
 	public Boolean getBloqueado() {
         return bloqueado;
@@ -33,12 +33,12 @@ public class Cliente extends PessoaFisica{
         this.limiteFilmes = limiteFilmes;
     }
 
-    
+
 	@Override
 	public String toString() {
 		return "Cliente []";
 	}
-    
-    
-        
+
+
+
 }

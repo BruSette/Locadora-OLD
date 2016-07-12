@@ -11,7 +11,7 @@ package locadora;
  */
 public class PagamentoCompra extends Pagamento {
     
-	private OperacaoEstoqueFilmes compra;
+    private OperacaoEstoqueFilmes compra;
 		
     public OperacaoEstoqueFilmes getCompra() {
 		return compra;

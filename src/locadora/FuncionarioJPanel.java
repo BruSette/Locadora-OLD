@@ -65,12 +65,12 @@ public class FuncionarioJPanel extends javax.swing.JPanel {
         nacionalidadejLabel3 = new javax.swing.JLabel();
         usuariojTextField = new javax.swing.JTextField();
         nacionalidadejLabel4 = new javax.swing.JLabel();
-        senhajTextField = new javax.swing.JTextField();
         nacionalidadejLabel5 = new javax.swing.JLabel();
         nacionalidadejLabel6 = new javax.swing.JLabel();
         agenciajTextField = new javax.swing.JTextField();
         ccjTextField = new javax.swing.JTextField();
         nacionalidadejLabel7 = new javax.swing.JLabel();
+        senhajPasswordField = new javax.swing.JPasswordField();
 
         setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), javax.swing.BorderFactory.createTitledBorder(null, "Funcionario", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Lucida Grande", 0, 18)))); // NOI18N
 
@@ -166,12 +166,6 @@ public class FuncionarioJPanel extends javax.swing.JPanel {
         });
 
         nacionalidadejLabel4.setText("Usuário:");
-
-        senhajTextField.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                senhajTextFieldActionPerformed(evt);
-            }
-        });
 
         nacionalidadejLabel5.setText("Senha:");
 
@@ -287,14 +281,12 @@ public class FuncionarioJPanel extends javax.swing.JPanel {
                             .addComponent(cadastrarjButton))
                         .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addGroup(layout.createSequentialGroup()
-                                    .addComponent(nacionalidadejLabel4)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(usuariojTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGroup(layout.createSequentialGroup()
-                                    .addComponent(nacionalidadejLabel5)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(senhajTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(nacionalidadejLabel5)
+                                .addComponent(nacionalidadejLabel4))
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addComponent(usuariojTextField, javax.swing.GroupLayout.DEFAULT_SIZE, 116, Short.MAX_VALUE)
+                                .addComponent(senhajPasswordField))
                             .addGap(12, 12, 12))))
                 .addContainerGap(29, Short.MAX_VALUE))
         );
@@ -367,7 +359,7 @@ public class FuncionarioJPanel extends javax.swing.JPanel {
                     .addComponent(nacionalidadejLabel2)
                     .addComponent(cargojTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(nacionalidadejLabel5)
-                    .addComponent(senhajTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(senhajPasswordField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 33, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(bancojTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -430,7 +422,7 @@ public class FuncionarioJPanel extends javax.swing.JPanel {
         agenciajTextField.setText("");
         ccjTextField.setText("");
         usuariojTextField.setText("");
-        senhajTextField.setText("");
+        senhajPasswordField.setText("");
         
     }//GEN-LAST:event_limparjButtonActionPerformed
 
@@ -449,10 +441,6 @@ public class FuncionarioJPanel extends javax.swing.JPanel {
     private void usuariojTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_usuariojTextFieldActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_usuariojTextFieldActionPerformed
-
-    private void senhajTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_senhajTextFieldActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_senhajTextFieldActionPerformed
 
     private void agenciajTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_agenciajTextFieldActionPerformed
         // TODO add your handling code here:
@@ -504,7 +492,7 @@ public class FuncionarioJPanel extends javax.swing.JPanel {
     private javax.swing.JTextField rgjTextField;
     private javax.swing.JLabel ruajLabel;
     private javax.swing.JTextField ruajTextField;
-    private javax.swing.JTextField senhajTextField;
+    private javax.swing.JPasswordField senhajPasswordField;
     private javax.swing.JLabel telefonejLabel;
     private javax.swing.JTextField telefonejTextField;
     private javax.swing.JTextField usuariojTextField;

@@ -16,9 +16,6 @@ public class Filmes {
     private Date lancamento;
     private String genero;
     private Boolean disponibilidade;
-
-    
-    
     
     public Filmes() {
 		super();

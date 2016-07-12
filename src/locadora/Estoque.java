@@ -13,7 +13,6 @@ import java.util.Date;
  */
 public class Estoque {
     
-    
     private String nomeEstoque;
     private Date dataEntrada;
     private PessoaJuridica fornecedor;

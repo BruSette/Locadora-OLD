@@ -13,8 +13,6 @@ public class Pagamento {
 	
     private ContaBancaria conta;
 
-	
-
 	public ContaBancaria getConta() {
 		return conta;
 	}

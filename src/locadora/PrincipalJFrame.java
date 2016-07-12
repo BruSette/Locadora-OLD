@@ -36,6 +36,11 @@ public class PrincipalJFrame extends javax.swing.JFrame {
         clientejMenuItem = new javax.swing.JMenuItem();
         funcionariojMenu = new javax.swing.JMenu();
         funcionariojMenuItem = new javax.swing.JMenuItem();
+        estoquejMenu = new javax.swing.JMenu();
+        estoquejMenuItem = new javax.swing.JMenuItem();
+        filmesjMenu = new javax.swing.JMenu();
+        filmesjMenuItem = new javax.swing.JMenuItem();
+        jMenu4 = new javax.swing.JMenu();
 
         jMenu1.setText("jMenu1");
 
@@ -65,6 +70,33 @@ public class PrincipalJFrame extends javax.swing.JFrame {
         funcionariojMenu.add(funcionariojMenuItem);
 
         jMenuBar1.add(funcionariojMenu);
+
+        estoquejMenu.setText("Estoque");
+
+        estoquejMenuItem.setText("Estoque");
+        estoquejMenuItem.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                estoquejMenuItemActionPerformed(evt);
+            }
+        });
+        estoquejMenu.add(estoquejMenuItem);
+
+        jMenuBar1.add(estoquejMenu);
+
+        filmesjMenu.setText("Filmes");
+
+        filmesjMenuItem.setText("Filmes");
+        filmesjMenuItem.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                filmesjMenuItemActionPerformed(evt);
+            }
+        });
+        filmesjMenu.add(filmesjMenuItem);
+
+        jMenuBar1.add(filmesjMenu);
+
+        jMenu4.setText("jMenu4");
+        jMenuBar1.add(jMenu4);
 
         setJMenuBar(jMenuBar1);
 
@@ -96,6 +128,16 @@ public class PrincipalJFrame extends javax.swing.JFrame {
         // TODO add your handling code here:
         setConteudo(new FuncionarioJPanel());
     }//GEN-LAST:event_funcionariojMenuItemActionPerformed
+
+    private void estoquejMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_estoquejMenuItemActionPerformed
+        // TODO add your handling code here:
+        setConteudo(new EstoqueFilmesJPanel());
+    }//GEN-LAST:event_estoquejMenuItemActionPerformed
+
+    private void filmesjMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_filmesjMenuItemActionPerformed
+        // TODO add your handling code here:
+        setConteudo(new FilmesJPanel());
+    }//GEN-LAST:event_filmesjMenuItemActionPerformed
 
     
     private void setConteudo(JPanel tela){
@@ -144,9 +186,14 @@ public class PrincipalJFrame extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JMenu clientejMenu;
     private javax.swing.JMenuItem clientejMenuItem;
+    private javax.swing.JMenu estoquejMenu;
+    private javax.swing.JMenuItem estoquejMenuItem;
+    private javax.swing.JMenu filmesjMenu;
+    private javax.swing.JMenuItem filmesjMenuItem;
     private javax.swing.JMenu funcionariojMenu;
     private javax.swing.JMenuItem funcionariojMenuItem;
     private javax.swing.JMenu jMenu1;
+    private javax.swing.JMenu jMenu4;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JPanel principaljPanel;
     // End of variables declaration//GEN-END:variables
