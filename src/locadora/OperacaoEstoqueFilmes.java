@@ -10,10 +10,11 @@ package locadora;
  * @author brunosette
  */
 public class OperacaoEstoqueFilmes {
+
     private EstoqueFilmes estoque;
     private Double valorCompra;
     private Pagamento pagamento;
-    
+
     public EstoqueFilmes getEstoque() {
         return estoque;
     }
@@ -30,19 +31,17 @@ public class OperacaoEstoqueFilmes {
         this.valorCompra = valorCompra;
     }
 
-	public Pagamento getPagamento() {
-		return pagamento;
-	}
+    public Pagamento getPagamento() {
+        return pagamento;
+    }
 
-	public void setPagamento(Pagamento pagamento) {
-		this.pagamento = pagamento;
-	}
+    public void setPagamento(Pagamento pagamento) {
+        this.pagamento = pagamento;
+    }
 
-	@Override
-	public String toString() {
-		return "OperacaoEstoqueFilmes []";
-	}
-    
-    
-            
+    @Override
+    public String toString() {
+        return "OperacaoEstoqueFilmes []";
+    }
+
 }

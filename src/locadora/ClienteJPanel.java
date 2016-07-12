@@ -9,12 +9,12 @@ package locadora;
  *
  * @author brunosette
  */
-public class clienteJPanel extends javax.swing.JPanel {
+public class ClienteJPanel extends javax.swing.JPanel {
 
     /**
      * Creates new form clienteJPanel
      */
-    public clienteJPanel() {
+    public ClienteJPanel() {
         initComponents();
     }
 
@@ -296,7 +296,6 @@ public class clienteJPanel extends javax.swing.JPanel {
         cepjTextField.setText("");
         cidadejTextField.setText("");
         estadojTextField.setText("");
-        
     }//GEN-LAST:event_limparjButtonActionPerformed
 
 

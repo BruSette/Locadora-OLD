@@ -40,7 +40,8 @@ public class PrincipalJFrame extends javax.swing.JFrame {
         estoquejMenuItem = new javax.swing.JMenuItem();
         filmesjMenu = new javax.swing.JMenu();
         filmesjMenuItem = new javax.swing.JMenuItem();
-        jMenu4 = new javax.swing.JMenu();
+        usuariosjMenu = new javax.swing.JMenu();
+        usuariosjMenuItem = new javax.swing.JMenuItem();
 
         jMenu1.setText("jMenu1");
 
@@ -95,8 +96,17 @@ public class PrincipalJFrame extends javax.swing.JFrame {
 
         jMenuBar1.add(filmesjMenu);
 
-        jMenu4.setText("jMenu4");
-        jMenuBar1.add(jMenu4);
+        usuariosjMenu.setText("Usuarios");
+
+        usuariosjMenuItem.setText("Usuarios");
+        usuariosjMenuItem.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                usuariosjMenuItemActionPerformed(evt);
+            }
+        });
+        usuariosjMenu.add(usuariosjMenuItem);
+
+        jMenuBar1.add(usuariosjMenu);
 
         setJMenuBar(jMenuBar1);
 
@@ -120,7 +130,7 @@ public class PrincipalJFrame extends javax.swing.JFrame {
     private void clientejMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_clientejMenuItemActionPerformed
         // TODO add your handling code here:
         
-        setConteudo(new clienteJPanel());
+        setConteudo(new ClienteJPanel());
         
     }//GEN-LAST:event_clientejMenuItemActionPerformed
 
@@ -138,6 +148,12 @@ public class PrincipalJFrame extends javax.swing.JFrame {
         // TODO add your handling code here:
         setConteudo(new FilmesJPanel());
     }//GEN-LAST:event_filmesjMenuItemActionPerformed
+
+    private void usuariosjMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_usuariosjMenuItemActionPerformed
+        // TODO add your handling code here:
+        setConteudo(new FilmesJPanel());
+        
+    }//GEN-LAST:event_usuariosjMenuItemActionPerformed
 
     
     private void setConteudo(JPanel tela){
@@ -193,8 +209,9 @@ public class PrincipalJFrame extends javax.swing.JFrame {
     private javax.swing.JMenu funcionariojMenu;
     private javax.swing.JMenuItem funcionariojMenuItem;
     private javax.swing.JMenu jMenu1;
-    private javax.swing.JMenu jMenu4;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JPanel principaljPanel;
+    private javax.swing.JMenu usuariosjMenu;
+    private javax.swing.JMenuItem usuariosjMenuItem;
     // End of variables declaration//GEN-END:variables
 }
