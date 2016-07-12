@@ -12,7 +12,9 @@ import java.util.Date;
  * @author brunosette
  */
 public class Estoque {
-	private String nomeEstoque;
+    
+    
+    private String nomeEstoque;
     private Date dataEntrada;
     private PessoaJuridica fornecedor;
     private Funcionario funcionario;
