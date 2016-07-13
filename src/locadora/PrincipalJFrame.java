@@ -34,6 +34,7 @@ public class PrincipalJFrame extends javax.swing.JFrame {
         jMenuBar1 = new javax.swing.JMenuBar();
         clientejMenu = new javax.swing.JMenu();
         clientejMenuItem = new javax.swing.JMenuItem();
+        emprestarjMenuItem = new javax.swing.JMenuItem();
         funcionariojMenu = new javax.swing.JMenu();
         funcionariojMenuItem = new javax.swing.JMenuItem();
         estoquejMenu = new javax.swing.JMenu();
@@ -57,6 +58,14 @@ public class PrincipalJFrame extends javax.swing.JFrame {
             }
         });
         clientejMenu.add(clientejMenuItem);
+
+        emprestarjMenuItem.setText("Emprestar");
+        emprestarjMenuItem.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                emprestarjMenuItemActionPerformed(evt);
+            }
+        });
+        clientejMenu.add(emprestarjMenuItem);
 
         jMenuBar1.add(clientejMenu);
 
@@ -155,6 +164,11 @@ public class PrincipalJFrame extends javax.swing.JFrame {
         
     }//GEN-LAST:event_usuariosjMenuItemActionPerformed
 
+    private void emprestarjMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_emprestarjMenuItemActionPerformed
+        // TODO add your handling code here:
+        setConteudo(new ReservafilmeJPanel());
+    }//GEN-LAST:event_emprestarjMenuItemActionPerformed
+    
     
     private void setConteudo(JPanel tela){
         principaljPanel.removeAll();
@@ -202,6 +216,7 @@ public class PrincipalJFrame extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JMenu clientejMenu;
     private javax.swing.JMenuItem clientejMenuItem;
+    private javax.swing.JMenuItem emprestarjMenuItem;
     private javax.swing.JMenu estoquejMenu;
     private javax.swing.JMenuItem estoquejMenuItem;
     private javax.swing.JMenu filmesjMenu;

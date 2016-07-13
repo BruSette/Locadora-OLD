@@ -9,8 +9,8 @@
             <LineBorder/>
           </Border>
           <Border PropertyName="inside" info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
-            <TitledBorder title="Estoque Filmes">
-              <Font PropertyName="font" name="Lucida Grande" size="18" style="0"/>
+            <TitledBorder title="Reservar">
+              <Font PropertyName="font" name="Dialog" size="18" style="0"/>
             </TitledBorder>
           </Border>
         </CompoundBorder>
@@ -32,46 +32,48 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="62" max="-2" attributes="0"/>
+          <Group type="102" attributes="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="103" alignment="0" groupAlignment="1" attributes="0">
-                      <Group type="102" alignment="1" attributes="0">
-                          <Component id="telefonejLabel" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="fornecedorjTextField" min="-2" pref="116" max="-2" attributes="0"/>
-                      </Group>
-                      <Group type="102" alignment="1" attributes="0">
-                          <Component id="nomejLabel" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="nomejTextField" min="-2" pref="116" max="-2" attributes="0"/>
-                      </Group>
-                      <Group type="102" alignment="1" attributes="0">
-                          <Component id="funcionariojLabel" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="funcionarioTextField" min="-2" pref="116" max="-2" attributes="0"/>
-                      </Group>
-                      <Group type="102" alignment="1" attributes="0">
-                          <Component id="emailjLabel" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Component id="datajTextField" min="-2" pref="116" max="-2" attributes="0"/>
-                      </Group>
-                  </Group>
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="90" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="164" max="-2" attributes="0"/>
                       <Component id="limparjButton" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="cadastrarjButton" min="-2" max="-2" attributes="0"/>
                   </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="54" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Group type="102" alignment="1" attributes="0">
+                              <Component id="telefonejLabel" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="fornecedorjTextField" min="-2" pref="116" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <Component id="nomejLabel" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="nomejTextField" min="-2" pref="116" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <Component id="funcionariojLabel" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="funcionarioTextField" min="-2" pref="116" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <Component id="emailjLabel" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="datajTextField" min="-2" pref="116" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
               </Group>
-              <EmptySpace pref="94" max="32767" attributes="0"/>
+              <EmptySpace pref="90" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="1" attributes="0">
-              <EmptySpace pref="58" max="32767" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="nomejLabel" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="nomejTextField" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -91,43 +93,17 @@
                   <Component id="emailjLabel" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="datajTextField" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="limparjButton" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="cadastrarjButton" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="43" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Component class="javax.swing.JLabel" name="nomejLabel">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Nome:"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JTextField" name="nomejTextField">
-    </Component>
-    <Component class="javax.swing.JLabel" name="telefonejLabel">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Fornecedor:"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JTextField" name="fornecedorjTextField">
-    </Component>
-    <Component class="javax.swing.JLabel" name="funcionariojLabel">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Funcionario:"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JTextField" name="funcionarioTextField">
-    </Component>
-    <Component class="javax.swing.JLabel" name="emailjLabel">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Data:"/>
-      </Properties>
-    </Component>
     <Component class="javax.swing.JTextField" name="datajTextField">
     </Component>
     <Component class="javax.swing.JButton" name="limparjButton">
@@ -141,6 +117,32 @@
     <Component class="javax.swing.JButton" name="cadastrarjButton">
       <Properties>
         <Property name="text" type="java.lang.String" value="Cadastrar"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="nomejLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Cliente:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="nomejTextField">
+    </Component>
+    <Component class="javax.swing.JLabel" name="telefonejLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Filme:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="fornecedorjTextField">
+    </Component>
+    <Component class="javax.swing.JLabel" name="funcionariojLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Funcionario:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="funcionarioTextField">
+    </Component>
+    <Component class="javax.swing.JLabel" name="emailjLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Data devolu&#xe7;&#xe3;o:"/>
       </Properties>
     </Component>
   </SubComponents>

@@ -11,11 +11,11 @@ package locadora;
  */
 public class ContaBancaria {
 
-    private String banco;
+    private Banco banco;
     private String agencia;
     private String contaNumero;
 
-    public ContaBancaria(String banco, String agencia) {
+    public ContaBancaria(Banco banco, String agencia) {
         super();
         this.banco = banco;
         this.agencia = agencia;
@@ -26,11 +26,11 @@ public class ContaBancaria {
         this.agencia = agencia;
     }
 
-    public String getBanco() {
+    public Banco getBanco() {
         return banco;
     }
 
-    public void setBanco(String banco) {
+    public void setBanco(Banco banco) {
         this.banco = banco;
     }
 
