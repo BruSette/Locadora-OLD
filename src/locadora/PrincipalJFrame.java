@@ -160,7 +160,7 @@ public class PrincipalJFrame extends javax.swing.JFrame {
 
     private void usuariosjMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_usuariosjMenuItemActionPerformed
         // TODO add your handling code here:
-        setConteudo(new FilmesJPanel());
+        setConteudo(new UsuarioJPanel());
         
     }//GEN-LAST:event_usuariosjMenuItemActionPerformed
 
